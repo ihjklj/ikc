@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".activity.FunctionActivity" />
         <receiver android:name=".receiver.NetworkReceiver" />
+        <service android:name=".service.FloatWindowService" />
     </application>
 
 </manifest>
