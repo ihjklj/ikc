@@ -8,7 +8,6 @@ import android.widget.ListView;
 import com.ihjklj.ikc.R;
 import com.ihjklj.ikc.adapter.IkAdapter;
 import com.ihjklj.ikc.model.IkListContent;
-
 import java.util.List;
 
 /**
