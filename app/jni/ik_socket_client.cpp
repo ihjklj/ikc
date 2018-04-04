@@ -15,7 +15,7 @@ CSocketClient::CSocketClient(char *host, int port) {
     mHost = strdup(host);
 }
 
-CSocketClient::~CSocketClient(){
+CSocketClient::~CSocketClient() {
     if (mSocketFd != -1) {
         closeTo();
     }
@@ -49,7 +49,7 @@ bool CSocketClient::connectTo() {
     setsockopt(socketFd, SOL_SOCKET, SO_RCVTIMEO, (char *)&tv, sizeof(tv));
 
     int nRet = connect(socketFd, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
-    if (nRet < 0){
+    if (nRet < 0) {
         LOGD("socket %d. Failed to connect() :%s.", socketFd, strerror(errno));
         closesocket(socketFd);
         return false;
