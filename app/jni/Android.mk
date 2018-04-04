@@ -7,7 +7,8 @@ LOCAL_SRC_FILES := ik_native.cpp \
 					ik_network.cpp \
 					ik_thread.cpp \
 					ik_function.cpp \
-					ik_util.cpp 
+					ik_util.cpp \
+					ik_socket_client.cpp
 LOCAL_CFLAGS := -static
 LOCAL_LDLIBS := -pthread -dl
 LOCAL_LDFLAGS := -L. -lc -lstdc++ -llog

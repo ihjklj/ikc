@@ -16,6 +16,7 @@ typedef  int (*PTHREAD_ROUTINE)(void* lParam);
 #define TRUE 1
 #define FALSE 0
 #define COMPILE_TIME __DATE__"@(8)"__TIME__
+#define closesocket(x) { shutdown(x, 2); close(x); (x) = -1; }
 
 #define LOGD(format, ...) 									\
 		do { 												\
